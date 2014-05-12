@@ -11,7 +11,7 @@ class person
     $this->name = $persons_name;
   }
   
-  protected private function get_pinn_number()
+  function get_pinn_number()
   {
     return $this->pinn_number;  
   }
@@ -21,7 +21,7 @@ class person
     $this->name= strtoupper($new_name);
   }
 
-  protected function get_name()
+  function get_name()
   {
     return $this->name;
   }

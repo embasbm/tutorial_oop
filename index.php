@@ -9,16 +9,15 @@
 </head>
 <body>
   <?php
-    $stefan = new person();
-    $jimmy = new person;
-    $stefan->set_name("Stefan Mischook");
-    $jimmy->set_name("Nick Waddles");
+  
+    $stefan = new person("Stefan Mischook");
+    $jimmy = new person("Nick Waddles");
     $pere = new person("Pere Sant Jordi");
-    echo "Stefan's full name: " . $stefan->get_name();
-    echo "Nick's full name: " . $jimmy->get_name();
-    echo "Pere's full name: " . $pere->get_name();
-    $ferran = new employee("Ferran Fingers");
-    echo "Ferran (Empleat)'s full name: " . $ferran->get_name();
+    echo "<p>Stefan's full name: " . $stefan->get_name();
+    echo "<p>Nick's full name: " . $jimmy->get_name();
+    echo "<p>Pere's full name: " . $pere->get_name();
+    $ferran = new employee("Johnny Fingers");
+    echo "<p><p><p>Ferran (Empleat)'s full name: " . $ferran->get_name();
   ?>
 </body>
 </html>
